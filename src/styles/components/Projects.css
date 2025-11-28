@@ -1,0 +1,41 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  border: 1px solid transparent;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  background-color: var(--gray-light);
+}
+
+.project-card:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+.project-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.project-tech {
+  font-family: monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
