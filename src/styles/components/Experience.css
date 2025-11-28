@@ -1,0 +1,46 @@
+.experience-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem 0;
+  border-top: 1px solid var(--gray-medium);
+  transition: background-color 0.3s ease;
+}
+
+.experience-item:hover {
+  background-color: var(--gray-light);
+}
+
+@media (min-width: 768px) {
+  .experience-item {
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: baseline;
+  }
+}
+
+.experience-company {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.experience-role {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.experience-date {
+  font-family: monospace;
+  text-align: right;
+  color: var(--accent-color);
+}
+
+.section-title {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  letter-spacing: -0.02em;
+}
+
