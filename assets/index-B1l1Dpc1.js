@@ -54,7 +54,7 @@ Error generating stack: `+e.message+`
       
       <h3>Regulatory Challenges</h3>
       <p>The primary hurdle remains "explainability." Regulators require lenders to explain adverse actions. Techniques like SHAP (SHapley Additive exPlanations) values are bridging this gap, allowing complex models to meet compliance standards.</p>
-    `},{id:2,title:"Optimizing Portfolio Health in Volatile Markets",date:"Aug 2024",category:"Analytics",image:"https://images.unsplash.com/photo-1611974765270-ca12586343bb?auto=format&fit=crop&q=80&w=1000",summary:"Strategies for dynamic line management and exposure reduction during economic downturns.",content:`
+    `},{id:2,title:"Optimizing Portfolio Health in Volatile Markets",date:"Aug 2024",category:"Analytics",image:"https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1000",summary:"Strategies for dynamic line management and exposure reduction during economic downturns.",content:`
       <p>In periods of economic volatility, static credit limits become a liability. A proactive approach to line management is essential for minimizing exposure without alienating good customers.</p>
       
       <h3>Dynamic Line Management</h3>
