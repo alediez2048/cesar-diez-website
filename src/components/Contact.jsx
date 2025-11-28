@@ -3,10 +3,9 @@ import '../styles/components/Contact.css';
 
 const Contact = () => {
   return (
-    <section id="contact" className="section">
-      <div className="container contact-container">
-        <h2 className="section-title">Get in Touch</h2>
-        <p className="subtitle">Available for collaborations and opportunities.</p>
+    <section id="contact" className="section contact-section">
+      <div className="container">
+        <span className="type-museum-label">Inquiries</span>
         
         <div className="contact-links">
           <a href="mailto:email@example.com" className="contact-link">Email</a>
@@ -15,7 +14,8 @@ const Contact = () => {
         </div>
 
         <footer className="footer">
-          © {new Date().getFullYear()} Cesar Diez. All rights reserved.
+          <span>© {new Date().getFullYear()} Cesar Diez</span>
+          <span>All Rights Reserved</span>
         </footer>
       </div>
     </section>

@@ -7,16 +7,27 @@
 @media (min-width: 768px) {
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--text-color);
+    padding-top: 2rem;
   }
 }
 
 .skill-category h3 {
-  font-size: 1rem;
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  border-bottom: 1px solid var(--text-color);
-  padding-bottom: 1rem;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill-category h3::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--text-color);
 }
 
 .skill-list {
@@ -24,8 +35,9 @@
 }
 
 .skill-item {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  font-weight: 300;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--gray-medium);
 }
-
