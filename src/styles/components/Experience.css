@@ -4,8 +4,12 @@
   border-left: 1px solid var(--text-color);
 }
 
+.timeline-company-group {
+  margin-bottom: 4rem;
+}
+
 .timeline-entry {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   position: relative;
 }
 
@@ -22,21 +26,37 @@
 .timeline-header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .timeline-role {
   font-family: var(--font-primary);
-  font-size: 2.5rem;
-  line-height: 1;
+  font-size: 2rem;
+  line-height: 1.1;
   text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 .timeline-company {
   font-family: var(--font-body);
   font-size: 1.25rem;
   font-style: italic;
+  color: var(--text-color);
+}
+
+.timeline-location {
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--gray-dark);
+}
+
+.timeline-type {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   margin-top: 0.5rem;
+  color: var(--gray-dark);
 }
 
 .timeline-date {
@@ -47,12 +67,43 @@
   display: inline-block;
   border: 1px solid black;
   padding: 0.2rem 0.5rem;
-  align-self: flex-start;
+  background: white;
 }
 
-.timeline-description {
+.timeline-description-list {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-description-list li {
   font-family: var(--font-body);
   font-size: 1.1rem;
-  max-width: 60ch;
-  opacity: 0.8;
+  line-height: 1.6;
+  max-width: 70ch;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline-description-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gray-dark);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .timeline-role {
+    font-size: 1.5rem;
+  }
+  
+  .timeline-container {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-entry::before {
+    left: -1.5rem;
+    width: 0.5rem;
+  }
 }
