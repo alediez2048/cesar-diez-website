@@ -20,6 +20,7 @@ const Skills = () => {
   return (
     <section id="skills" className="section">
       <div className="container">
+        <h2 className="type-gallery-header">Technical<br />Inventory</h2>
         <div className="skills-grid">
           {skillCategories.map((category, index) => (
             <div key={index} className="skill-category">

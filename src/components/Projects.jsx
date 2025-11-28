@@ -5,27 +5,34 @@ const Projects = () => {
   const projects = [
     {
       title: 'Credit Risk Model',
-      description: 'Developed a predictive model to assess credit risk using machine learning algorithms, improving approval accuracy by 15%.',
-      tech: 'Python, Scikit-learn, Pandas',
+      description: 'Predictive machine learning assessment.',
+      tech: 'Python / ML',
+      year: '2024'
     },
     {
       title: 'Financial Dashboard',
-      description: 'Interactive dashboard for real-time monitoring of key financial metrics and KPIs for executive reporting.',
-      tech: 'Tableau, SQL, Excel',
+      description: 'Real-time executive KPI visualization.',
+      tech: 'Tableau / SQL',
+      year: '2023'
     },
-    // Add more projects
   ];
 
   return (
     <section id="projects" className="section">
       <div className="container">
-        <h2 className="section-title">Projects</h2>
-        <div className="projects-grid">
+        <h2 className="type-gallery-header">Selected<br />Works</h2>
+        <div className="gallery-grid">
           {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <h3 className="project-title">{project.title}</h3>
-              <p className="project-description">{project.description}</p>
-              <div className="project-tech">{project.tech}</div>
+            <div key={index} className="gallery-item">
+              <div className="gallery-visual"></div>
+              <h3 className="gallery-title">{project.title}</h3>
+              <div className="gallery-meta">
+                <span>{project.tech}</span>
+                <span>{project.year}</span>
+              </div>
+              <p className="type-body-text" style={{marginTop: '1rem', fontSize: '1rem'}}>
+                {project.description}
+              </p>
             </div>
           ))}
         </div>

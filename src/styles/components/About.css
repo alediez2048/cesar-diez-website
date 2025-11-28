@@ -1,30 +1,22 @@
-.about-content {
+.about-layout {
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
 }
 
 @media (min-width: 768px) {
-  .about-content {
-    grid-template-columns: 1fr 2fr;
+  .about-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
   }
 }
 
-.about-label {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding-top: 0.5rem;
-  border-top: 1px solid var(--text-color);
+.about-label-column {
+  position: sticky;
+  top: 100px;
 }
 
-.about-text {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  font-weight: 300;
+.curator-note-container {
+  padding-top: 2rem;
+  border-top: 4px solid var(--text-color);
 }
-
-.about-highlight {
-  font-weight: 500;
-}
-
