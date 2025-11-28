@@ -7,8 +7,8 @@
   --gray-dark: #333333;
   
   /* MoMA-style Typography */
-  --font-primary: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Robust, structural */
-  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Clean, neutral */
+  --font-primary: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Restored original font stack */
+  --font-body: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Consistent clean look */
   
   --spacing-unit: 1rem;
   --container-width: 1400px; /* Wider for gallery feel */
