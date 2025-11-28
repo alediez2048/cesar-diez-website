@@ -21,7 +21,7 @@ export const posts = [
     title: "Optimizing Portfolio Health in Volatile Markets",
     date: "Aug 2024",
     category: "Analytics",
-    image: "https://images.unsplash.com/photo-1611974765270-ca12586343bb?auto=format&fit=crop&q=80&w=1000", // Stock chart/finance
+    image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1000", // Stock chart/finance alternative
     summary: "Strategies for dynamic line management and exposure reduction during economic downturns.",
     content: `
       <p>In periods of economic volatility, static credit limits become a liability. A proactive approach to line management is essential for minimizing exposure without alienating good customers.</p>
