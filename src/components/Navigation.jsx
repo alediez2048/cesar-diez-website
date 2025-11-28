@@ -20,7 +20,7 @@ const Navigation = () => {
           <span className="nav-link" onClick={() => scrollToSection('experience')}>Timeline</span>
         </li>
         <li className="nav-item">
-          <span className="nav-link" onClick={() => scrollToSection('projects')}>Exhibition</span>
+          <span className="nav-link" onClick={() => scrollToSection('insights')}>Insights</span>
         </li>
         <li className="nav-item">
           <span className="nav-link" onClick={() => scrollToSection('contact')}>Inquiries</span>
@@ -31,4 +31,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-
