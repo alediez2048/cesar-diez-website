@@ -4,6 +4,7 @@ export const posts = [
     title: "The Future of Credit Risk Modeling",
     date: "Oct 2024",
     category: "Strategy",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000", // Data visualization/screen
     summary: "How AI and machine learning are reshaping traditional scorecard development in consumer lending.",
     content: `
       <p>Traditional credit scoring models have relied on logistic regression for decades. While interpretable and robust, they often miss non-linear relationships in data that can predict default risk with greater accuracy.</p>
@@ -20,6 +21,7 @@ export const posts = [
     title: "Optimizing Portfolio Health in Volatile Markets",
     date: "Aug 2024",
     category: "Analytics",
+    image: "https://images.unsplash.com/photo-1611974765270-ca12586343bb?auto=format&fit=crop&q=80&w=1000", // Stock chart/finance
     summary: "Strategies for dynamic line management and exposure reduction during economic downturns.",
     content: `
       <p>In periods of economic volatility, static credit limits become a liability. A proactive approach to line management is essential for minimizing exposure without alienating good customers.</p>
@@ -33,6 +35,7 @@ export const posts = [
     title: "Data-Driven Decisioning for Commercial Lending",
     date: "May 2024",
     category: "Finance",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000", // Architecture/Business
     summary: "Leveraging alternative data sources to underwrite thin-file commercial entities.",
     content: `
       <p>Small business underwriting has historically suffered from a lack of standardized financial data. The "thin file" problem prevents creditworthy businesses from accessing capital.</p>
@@ -41,4 +44,3 @@ export const posts = [
     `
   }
 ];
-

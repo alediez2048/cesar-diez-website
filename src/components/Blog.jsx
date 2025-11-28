@@ -29,7 +29,9 @@ const Blog = () => {
               className="blog-item"
               onClick={() => setSelectedPost(post)}
             >
-              <div className="blog-visual"></div>
+              <div className="blog-visual">
+                <img src={post.image} alt={post.title} />
+              </div>
               <span className="blog-category">{post.category}</span>
               <h3 className="blog-title">{post.title}</h3>
               <p className="blog-summary">{post.summary}</p>
@@ -58,6 +60,12 @@ const Blog = () => {
                   <span>{selectedPost.date}</span>
                 </div>
                 <h1 className="article-title">{selectedPost.title}</h1>
+                {/* Hero image in reading room */}
+                <img 
+                  src={selectedPost.image} 
+                  alt={selectedPost.title} 
+                  className="article-hero-image"
+                />
               </header>
               
               <div 
@@ -73,4 +81,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
