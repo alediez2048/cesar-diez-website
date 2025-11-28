@@ -3,7 +3,7 @@
 A minimalist, MoMA-inspired personal website for Cesar Diez, showcasing expertise in Credit Risk Strategy, Finance, and Data Analytics.
 
 ## Live Demo
-[https://jorgealejandrodiez.github.io/cesar-diez-website/](https://jorgealejandrodiez.github.io/cesar-diez-website/)
+[https://alediez2048.github.io/cesar-diez-website/](https://alediez2048.github.io/cesar-diez-website/)
 
 ## Technologies
 - **Frontend**: React 18
@@ -26,7 +26,7 @@ The design is inspired by the Museum of Modern Art (MoMA), focusing on:
 
 ### Installation
 ```bash
-git clone https://github.com/jorgealejandrodiez/cesar-diez-website.git
+git clone https://github.com/alediez2048/cesar-diez-website.git
 cd cesar-diez-website
 npm install
 ```
