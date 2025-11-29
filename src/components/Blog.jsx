@@ -17,6 +17,11 @@ const Blog = () => {
     };
   }, [selectedPost]);
 
+  const handleClose = (e) => {
+    if (e) e.stopPropagation();
+    setSelectedPost(null);
+  };
+
   return (
     <section id="insights" className="section">
       <div className="container">
@@ -43,15 +48,13 @@ const Blog = () => {
         {/* Reading Room Overlay */}
         {selectedPost && (
           <div className="reading-room-overlay">
-            <button 
-              className="close-button"
-              onClick={(e) => {
-                e.stopPropagation();
-                setSelectedPost(null);
-              }}
-            >
-              Close [X]
-            </button>
+            {/* Sticky Header Bar */}
+            <div className="reading-room-header-bar">
+              <button className="back-button-top" onClick={handleClose}>
+                Back to Insights
+              </button>
+              <span className="type-museum-label">Reading Room</span>
+            </div>
             
             <div className="reading-room-container">
               <header className="article-header">
@@ -60,7 +63,6 @@ const Blog = () => {
                   <span>{selectedPost.date}</span>
                 </div>
                 <h1 className="article-title">{selectedPost.title}</h1>
-                {/* Hero image in reading room */}
                 <img 
                   src={selectedPost.image} 
                   alt={selectedPost.title} 
@@ -72,6 +74,12 @@ const Blog = () => {
                 className="article-content"
                 dangerouslySetInnerHTML={{ __html: selectedPost.content }}
               />
+
+              <footer className="article-footer">
+                <button className="back-button-large" onClick={handleClose}>
+                  Return to Gallery
+                </button>
+              </footer>
             </div>
           </div>
         )}
