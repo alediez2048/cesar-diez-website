@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/components/About.css';
+import profileImage from '../assets/cesar-profile.jpeg';
 
 const About = () => {
   return (
@@ -9,6 +10,11 @@ const About = () => {
           <div className="about-label-column">
             <span className="type-museum-label">Curator's Note</span>
             <h2 className="type-gallery-header" style={{border: 'none', padding: 0}}>The<br />Profile</h2>
+            
+            <div className="profile-image-container">
+              <img src={profileImage} alt="Cesar Diez" className="profile-image" />
+              <span className="profile-caption">Cesar Diez, 2025</span>
+            </div>
           </div>
           
           <div className="curator-note-container">

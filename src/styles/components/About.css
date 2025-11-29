@@ -20,3 +20,37 @@
   padding-top: 2rem;
   border-top: 4px solid var(--text-color);
 }
+
+/* Profile Image Styling */
+.profile-image-container {
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Limit size */
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border: 1px solid var(--text-color);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.profile-image-container:hover .profile-image {
+  filter: grayscale(0%);
+  transform: scale(1.02);
+}
+
+.profile-caption {
+  font-family: var(--font-primary);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+  display: block;
+  opacity: 0.7;
+}
